@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: tedu.CopyOfApp1Test1
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.272 sec <<< FAILURE! - in tedu.CopyOfApp1Test1
+testb on testb(tedu.CopyOfApp1Test1)(tedu.CopyOfApp1Test1)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: 
+	at org.junit.Assert.fail(Assert.java:91)
+	at org.junit.Assert.assertTrue(Assert.java:43)
+	at org.junit.Assert.assertFalse(Assert.java:68)
+	at org.junit.Assert.assertFalse(Assert.java:79)
+	at tedu.CopyOfApp1Test1.testb(CopyOfApp1Test1.java:27)
+

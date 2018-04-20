@@ -1,0 +1,20 @@
+<suite name="Suite" parallel="false">
+<listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+</listeners>
+
+  <test name="Test">
+  <groups>
+  	<run>
+  		<include name="g1"/>
+  		<include name="g2"/>
+  	</run>
+  </groups>
+    <classes>
+    <class name="tedu.NewTest2"/>
+      <class name="tedu.NewTest1"/>
+       <class name="tedu.NewTest"/>
+    </classes>
+  </test>
+</suite>

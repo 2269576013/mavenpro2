@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ecshop.TestAdvancedSearch" failures="0" tests="3" time="38.604" errors="0">
+  <properties/>
+  <testcase name="f" time="4.91" classname="ecshop.TestAdvancedSearch"/>
+  <testcase name="f" time="6.406" classname="ecshop.TestAdvancedSearch"/>
+  <testcase name="f" time="5.324" classname="ecshop.TestAdvancedSearch"/>
+</testsuite>

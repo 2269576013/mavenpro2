@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [tedu.App1Test]" junit="true">
+  <test name="Command line test c6edbc71-0f90-4615-a3cd-a9ad7c433510(failed)" junit="true">
+    <groups>
+      <run>
+        <include name="group1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tedu.App1Test">
+        <methods>
+          <include name="testb"/>
+        </methods>
+      </class> <!-- tedu.App1Test -->
+    </classes>
+  </test> <!-- Command line test c6edbc71-0f90-4615-a3cd-a9ad7c433510(failed) -->
+</suite> <!-- Failed suite [tedu.App1Test] -->

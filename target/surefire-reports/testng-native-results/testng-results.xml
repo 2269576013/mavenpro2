@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="tedu.CopyOfNewTestCase" duration-ms="2" started-at="2018-03-28T07:30:24Z" finished-at="2018-03-28T07:30:24Z">
+    <groups>
+    </groups>
+    <test name="Command line test e4428e9d-c6a4-4f07-814d-2877654ce2a1" duration-ms="2" started-at="2018-03-28T07:30:24Z" finished-at="2018-03-28T07:30:24Z">
+    </test> <!-- Command line test e4428e9d-c6a4-4f07-814d-2877654ce2a1 -->
+  </suite> <!-- tedu.CopyOfNewTestCase -->
+  <suite name="tedu.NewTest" duration-ms="0" started-at="2018-03-28T07:30:24Z" finished-at="2018-03-28T07:30:24Z">
+    <groups>
+    </groups>
+    <test name="Command line test 8ab8897f-c729-4a24-8010-06dbe48b5e5f" duration-ms="0" started-at="2018-03-28T07:30:24Z" finished-at="2018-03-28T07:30:24Z">
+    </test> <!-- Command line test 8ab8897f-c729-4a24-8010-06dbe48b5e5f -->
+  </suite> <!-- tedu.NewTest -->
+</testng-results>

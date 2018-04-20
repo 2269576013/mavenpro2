@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [tedu.CopyOfApp1Test1]" junit="true">
+  <test name="Command line test 4e22cdc8-7c87-4fca-a5e1-352f1825344a(failed)" junit="true">
+    <groups>
+      <run>
+        <include name="g1"/>
+        <include name="g2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tedu.CopyOfApp1Test1">
+        <methods>
+          <include name="testb"/>
+        </methods>
+      </class> <!-- tedu.CopyOfApp1Test1 -->
+    </classes>
+  </test> <!-- Command line test 4e22cdc8-7c87-4fca-a5e1-352f1825344a(failed) -->
+</suite> <!-- Failed suite [tedu.CopyOfApp1Test1] -->

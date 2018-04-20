@@ -1,0 +1,171 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="mavenPro2" duration-ms="38604" started-at="2018-04-08T09:16:36Z" finished-at="2018-04-08T09:17:14Z">
+    <groups>
+    </groups>
+    <test name="ecshop.TestAdvancedSearch" duration-ms="38604" started-at="2018-04-08T09:16:36Z" finished-at="2018-04-08T09:17:14Z">
+      <class name="ecshop.TestAdvancedSearch">
+        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="7520" started-at="2018-04-08T09:16:36Z" finished-at="2018-04-08T09:16:43Z">
+        </test-method>
+        <test-method status="PASS" signature="f(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="f" duration-ms="4910" started-at="2018-04-08T09:16:43Z" finished-at="2018-04-08T09:16:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[手机类型]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[三星]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[请选择]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="194" started-at="2018-04-08T09:16:48Z" finished-at="2018-04-08T09:16:48Z">
+        </test-method>
+        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="7193" started-at="2018-04-08T09:16:48Z" finished-at="2018-04-08T09:16:56Z">
+        </test-method>
+        <test-method status="PASS" signature="f(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="f" duration-ms="6406" started-at="2018-04-08T09:16:56Z" finished-at="2018-04-08T09:17:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[手机类型]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[联想]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[精品手机]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2008年06月]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[灰色]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="435" started-at="2018-04-08T09:17:02Z" finished-at="2018-04-08T09:17:02Z">
+        </test-method>
+        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="6421" started-at="2018-04-08T09:17:02Z" finished-at="2018-04-08T09:17:09Z">
+        </test-method>
+        <test-method status="PASS" signature="f(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)" name="f" duration-ms="5324" started-at="2018-04-08T09:17:09Z" finished-at="2018-04-08T09:17:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[t]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[充值卡]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LG]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[请选择]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="184" started-at="2018-04-08T09:17:14Z" finished-at="2018-04-08T09:17:14Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

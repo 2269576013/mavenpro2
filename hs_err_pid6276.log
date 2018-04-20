@@ -1,0 +1,176 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x77e4e23e, pid=6276, tid=2924
+#
+# Java VM: Java HotSpot(TM) Client VM (11.3-b02 mixed mode windows-x86)
+# Problematic frame:
+# C  [ntdll.dll+0x2e23e]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0cf55800):  JavaThread "Thread-5" [_thread_in_native, id=2924, stack(0x0d270000,0x0d2c0000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x517d85c1
+
+Registers:
+EAX=0x00000000, EBX=0x005501f8, ECX=0x00510000, EDX=0x005501f8
+ESP=0x0d2beff8, EBP=0x0d2bf02c, ESI=0x517d85bd, EDI=0x005501f0
+EIP=0x77e4e23e, EFLAGS=0x00010206
+
+Top of Stack: (sp=0x0d2beff8)
+0x0d2beff8:   00000000 00510000 005501f8 00564d88
+0x0d2bf008:   0d2bf050 77e6b61b 00510000 00000000
+0x0d2bf018:   00564d90 00010000 00000000 00000000
+0x0d2bf028:   005501f0 0d2bf044 77e4dea3 005501f8
+0x0d2bf038:   00010000 00000000 005501f0 0d2bf05c
+0x0d2bf048:   77e6b353 00510000 00000000 005501f8
+0x0d2bf058:   00000000 0d2bf0a4 77e6c13f 005501f8
+0x0d2bf068:   0d2bf5f8 0d2bf4a0 0d2bf594 00000000 
+
+Instructions: (pc=0x77e4e23e)
+0x77e4e22e:   c1 ee 03 33 f0 33 35 a4 00 f2 77 89 7d fc 33 f1
+0x77e4e23e:   8b 46 04 89 45 f4 c6 47 07 80 c6 47 06 00 8b 5e 
+
+
+Stack: [0x0d270000,0x0d2c0000],  sp=0x0d2beff8,  free space=315k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [ntdll.dll+0x2e23e]
+C  [ntdll.dll+0x2dea3]
+C  [ntdll.dll+0x4b353]
+C  [ntdll.dll+0x4c13f]
+C  [kernel32.dll+0x25f43]
+C  [kernel32.dll+0x21b78]
+C  [kernel32.dll+0x286e1]
+C  [kernel32.dll+0x1108e]
+C  [java.dll+0x7fea]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  java.lang.ProcessImpl.create(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/io/FileDescriptor;Ljava/io/FileDescriptor;Ljava/io/FileDescriptor;)J+0
+j  java.lang.ProcessImpl.<init>([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V+244
+j  java.lang.ProcessImpl.start([Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Z)Ljava/lang/Process;+15
+j  java.lang.ProcessBuilder.start()Ljava/lang/Process;+112
+j  java.lang.Runtime.exec([Ljava/lang/String;[Ljava/lang/String;Ljava/io/File;)Ljava/lang/Process;+16
+j  org.apache.commons.exec.launcher.Java13CommandLauncher.exec(Lorg/apache/commons/exec/CommandLine;Ljava/util/Map;Ljava/io/File;)Ljava/lang/Process;+16
+j  org.apache.commons.exec.DefaultExecutor.launch(Lorg/apache/commons/exec/CommandLine;Ljava/util/Map;Ljava/io/File;)Ljava/lang/Process;+62
+j  org.apache.commons.exec.DefaultExecutor.executeInternal(Lorg/apache/commons/exec/CommandLine;Ljava/util/Map;Ljava/io/File;Lorg/apache/commons/exec/ExecuteStreamHandler;)I+4
+j  org.apache.commons.exec.DefaultExecutor.access$200(Lorg/apache/commons/exec/DefaultExecutor;Lorg/apache/commons/exec/CommandLine;Ljava/util/Map;Ljava/io/File;Lorg/apache/commons/exec/ExecuteStreamHandler;)I+6
+j  org.apache.commons.exec.DefaultExecutor$1.run()V+29
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x0cf55800 JavaThread "Thread-5" [_thread_in_native, id=2924, stack(0x0d270000,0x0d2c0000)]
+  0x0cdb6400 JavaThread "ReaderThread" [_thread_in_native, id=4624, stack(0x0d1e0000,0x0d230000)]
+  0x024eb400 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=5556, stack(0x0c960000,0x0c9b0000)]
+  0x024e9800 JavaThread "CompilerThread0" daemon [_thread_blocked, id=6604, stack(0x0c8d0000,0x0c920000)]
+  0x024e5400 JavaThread "Attach Listener" daemon [_thread_blocked, id=6400, stack(0x0c840000,0x0c890000)]
+  0x024b2400 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=6652, stack(0x0c7b0000,0x0c800000)]
+  0x024a0400 JavaThread "Finalizer" daemon [_thread_blocked, id=5468, stack(0x0c720000,0x0c770000)]
+  0x0249b800 JavaThread "Reference Handler" daemon [_thread_blocked, id=2832, stack(0x0c690000,0x0c6e0000)]
+  0x0256b800 JavaThread "main" [_thread_in_native, id=3756, stack(0x00430000,0x00480000)]
+
+Other Threads:
+  0x02498400 VMThread [stack: 0x0c600000,0x0c650000] [id=4628]
+  0x024f5400 WatcherThread [stack: 0x0c9f0000,0x0ca40000] [id=6484]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 134K [0x04570000, 0x04670000, 0x04a50000)
+  eden space 896K,  10% used [0x04570000, 0x04587b90, 0x04650000)
+  from space 64K,  61% used [0x04660000, 0x04669d90, 0x04670000)
+  to   space 64K,   0% used [0x04650000, 0x04650000, 0x04660000)
+ tenured generation   total 4096K, used 2213K [0x04a50000, 0x04e50000, 0x08570000)
+   the space 4096K,  54% used [0x04a50000, 0x04c79450, 0x04c79600, 0x04e50000)
+ compacting perm gen  total 12288K, used 11709K [0x08570000, 0x09170000, 0x0c570000)
+   the space 12288K,  95% used [0x08570000, 0x090df698, 0x090df800, 0x09170000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\MyEclipse 8.5_1\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\bin\javaw.exe
+0x77e20000 - 0x77fa0000 	C:\Windows\SysWOW64\ntdll.dll
+0x77320000 - 0x77420000 	C:\Windows\syswow64\kernel32.dll
+0x76270000 - 0x762b6000 	C:\Windows\syswow64\KERNELBASE.dll
+0x77840000 - 0x778e0000 	C:\Windows\syswow64\ADVAPI32.dll
+0x77700000 - 0x777ac000 	C:\Windows\syswow64\msvcrt.dll
+0x77a00000 - 0x77a19000 	C:\Windows\SysWOW64\sechost.dll
+0x775b0000 - 0x776a0000 	C:\Windows\syswow64\RPCRT4.dll
+0x75990000 - 0x759f0000 	C:\Windows\syswow64\SspiCli.dll
+0x75980000 - 0x7598c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x75e00000 - 0x75f00000 	C:\Windows\syswow64\USER32.dll
+0x76550000 - 0x765e0000 	C:\Windows\syswow64\GDI32.dll
+0x762f0000 - 0x762fa000 	C:\Windows\syswow64\LPK.dll
+0x75be0000 - 0x75c7d000 	C:\Windows\syswow64\USP10.dll
+0x75c80000 - 0x75ce0000 	C:\Windows\system32\IMM32.DLL
+0x77930000 - 0x779fc000 	C:\Windows\syswow64\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\MyEclipse 8.5_1\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\bin\msvcr71.dll
+0x6d8b0000 - 0x6db06000 	D:\MyEclipse 8.5_1\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\bin\client\jvm.dll
+0x756b0000 - 0x756e2000 	C:\Windows\system32\WINMM.dll
+0x75370000 - 0x753bb000 	C:\Windows\system32\apphelp.dll
+0x6d340000 - 0x6d348000 	D:\MyEclipse 8.5_1\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\bin\hpi.dll
+0x76260000 - 0x76265000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d860000 - 0x6d86c000 	D:\MyEclipse 8.5_1\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\bin\verify.dll
+0x6d3e0000 - 0x6d3ff000 	D:\MyEclipse 8.5_1\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\bin\java.dll
+0x6d8a0000 - 0x6d8af000 	D:\MyEclipse 8.5_1\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\bin\zip.dll
+0x6d6c0000 - 0x6d6d3000 	D:\MyEclipse 8.5_1\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\bin\net.dll
+0x77230000 - 0x77265000 	C:\Windows\syswow64\WS2_32.dll
+0x759f0000 - 0x759f6000 	C:\Windows\syswow64\NSI.dll
+0x75050000 - 0x7508c000 	C:\Windows\system32\mswsock.dll
+0x74fd0000 - 0x74fd6000 	C:\Windows\System32\wship6.dll
+0x75040000 - 0x75045000 	C:\Windows\System32\wshtcpip.dll
+0x74fe0000 - 0x75024000 	C:\Windows\system32\DNSAPI.dll
+0x758a0000 - 0x758bc000 	C:\Windows\system32\IPHLPAPI.DLL
+0x75890000 - 0x75897000 	C:\Windows\system32\WINNSI.DLL
+0x74f60000 - 0x74f66000 	C:\Windows\system32\rasadhlp.dll
+0x74f10000 - 0x74f48000 	C:\Windows\System32\fwpuclnt.dll
+0x75330000 - 0x75346000 	C:\Windows\system32\CRYPTSP.dll
+0x752f0000 - 0x7532b000 	C:\Windows\system32\rsaenh.dll
+0x75690000 - 0x756a7000 	C:\Windows\system32\USERENV.dll
+0x75680000 - 0x7568b000 	C:\Windows\system32\profapi.dll
+0x75030000 - 0x75040000 	C:\Windows\system32\NLAapi.dll
+0x75350000 - 0x75358000 	C:\Windows\System32\winrnr.dll
+0x75360000 - 0x75370000 	C:\Windows\system32\napinsp.dll
+0x74f70000 - 0x74f82000 	C:\Windows\system32\pnrpnsp.dll
+0x74f50000 - 0x74f5d000 	C:\Windows\system32\wshbth.dll
+0x752d0000 - 0x752e2000 	C:\Windows\system32\dhcpcsvc.DLL
+0x74f90000 - 0x74f9d000 	C:\Windows\system32\dhcpcsvc6.DLL
+0x6d6e0000 - 0x6d6e9000 	D:\MyEclipse 8.5_1\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\bin\nio.dll
+
+VM Arguments:
+jvm_args: -ea -Dfile.encoding=UTF-8 
+java_command: org.testng.remote.RemoteTestNG -port 53670 -d D:\WorkSpaces\mavenPro2\test-output -usedefaultlisteners false C:\Users\tarena\AppData\Local\Temp\testng-eclipse\testng-customsuite.xml
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_80
+CLASSPATH=.;C:\Program Files\Java\jdk1.7.0_80\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_80\lib\tools.jar
+PATH=D:/MyEclipse 8.5_1/Genuitec/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin/client;D:/MyEclipse 8.5_1/Genuitec/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\wamp\bin\mysql\mysql5.5.24\\bin;C:\Program Files (x86)\Google\Chrome\Application\;C:\Program Files\Java\jdk1.7.0_80\jre\bin;C:\Program Files\Java\jdk1.7.0_80\bin;D:\apache-maven-3.2.5\bin;C:\Program Files (x86)\Git\cmd
+USERNAME=tarena
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7600 
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 14 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 4194303k(4194303k free), swap 4194303k(4194303k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.3-b02) for windows-x86 JRE (1.6.0_13-b03), built on Mar  9 2009 01:15:24 by "java_re" with MS VC++ 7.1
+
+time: Wed Apr 18 12:48:39 2018
+elapsed time: 10 seconds
+
