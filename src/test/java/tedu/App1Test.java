@@ -19,6 +19,7 @@ public class App1Test {
 	
 	@Test
 	public void testa() throws Exception {
+		System.out.println("1");
 		assertTrue(true);
 	}
 	
