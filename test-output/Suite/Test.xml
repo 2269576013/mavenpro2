@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test" failures="0" tests="1" time="15.926" errors="0">
-  <properties/>
-  <testcase name="f" time="8.335" classname="ecshop.TestECShopSearch"/>
-</testsuite>
